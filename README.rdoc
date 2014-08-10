@@ -4,4 +4,4 @@ Ruby on Rails practice
 
 build a simplified shopping web
 
-follow book "Agail Web Dev with Rails 4"
+follow book "Agile Web Dev with Rails 4"
