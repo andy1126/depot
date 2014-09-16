@@ -7,6 +7,12 @@
       <jdbc-url>jdbc:sqlite:C:\Sites\depot\db\development.sqlite3</jdbc-url>
       <libraries />
     </data-source>
+    <data-source source="LOCAL" name="Rails depot: test" uuid="14759aa9-512a-4979-b782-39d5e94e40eb">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Sites\depot\db\test.sqlite3</jdbc-url>
+      <libraries />
+    </data-source>
   </component>
 </project>
 
