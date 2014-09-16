@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
-
+@import "bootstrap";
 #banner {
   background: #9c9;
   padding: 10px;
@@ -33,7 +33,7 @@
   padding: 1em;
   margin-bottom: 2em;
   background-color: #f0f0f0;
-  font: bold smaller sans-serif;
+  font: bold large sans-serif;
 }
 
 #columns {
