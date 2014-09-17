@@ -20,12 +20,17 @@
 <nav>
   <div id="columns">
     <div id="side">
+      <% if @cart %>
+      <%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %>
+          <%= render @cart %>
+      <% end %>
+      <% end %>
       <ul class = "navbar">
         <li><%= link_to "Home", store_path %></li>
         <li><a href="http://www..../faq">Questions</a></li>
         <li><a href="http://www..../news">News</a></li>
         <li><a href="http://www..../contact">Contact</a></li>
-        <li><%= link_to "Cart", carts_path %></li>
+        <!--<li><%= link_to "Cart", carts_path %></li>-->
         <li><%= link_to "Products", products_path %></li>
       </ul>
       <div id="clock"><%= Time.now %></div>

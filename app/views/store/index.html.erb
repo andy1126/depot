@@ -1,7 +1,7 @@
 <% if notice %>
     <p id="notice"><%= notice %></p>
 <% end %>
-<h1>Your Pragmatic Catalog --- Buy sth you rich dog</h1>
+<h1><strong>Your Pragmatic Catalog --- Buy sth you rich dog</strong></h1>
 <% cache ['store', Product.latest] do %>
     <% @products.each do |product| %>
         <% cache ['entry', product] do %>
@@ -13,7 +13,7 @@
               </div>
               <div class="price_line">
                 <span class="price">Price: <%= number_to_currency(product.price) %></span>
-                <%= button_to 'Add to Cart', line_items_path(product_id: product), class: "btn btn-primary" %>
+                <%= button_to 'Add to Cart', line_items_path(product_id: product), class: "btn btn-primary", remote: true %>
               </div>
             </div>
         <% end %>
