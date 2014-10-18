@@ -1,13 +1,13 @@
 == README
 
-Ruby on Rails practice
+###Ruby on Rails practice
 
 build a simplified shopping web
 
 follow book "Agile Web Dev with Rails 4"
 
 ------------------------------------------
-To do list
+####To do list
 
 1. distinguish between administrators and customs
 
